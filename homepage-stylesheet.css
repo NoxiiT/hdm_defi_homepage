@@ -1,0 +1,405 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+}
+
+.navbar {
+    transition: .3s top ease-in-out;
+    height: 10em;
+    width: 100%;
+    background: linear-gradient(to right, #2176bc, #28bbff);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.navbar a {
+    padding-bottom: .5rem;
+    color: #fff;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    font-size: 1.8rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 12.5rem;
+    width: 20%;
+    justify-content: center;
+}
+
+.navbar-items ul {
+    display: block;
+    transform: none;
+    transition: all 0s ease 0s;
+    box-sizing: border-box;
+    background-position: 0 0;
+    text-align: center;
+    word-spacing: 0;
+    line-height: 15px;
+    text-decoration: rgb(33, 37, 41);
+    height: 151px;
+    width: 1536px;
+    min-height: auto;
+    min-width: auto;
+}
+
+.navbar-items ul li {
+    display: inline-block;
+    padding: 0 1rem;
+    margin: 0 1rem;
+    position: relative;
+    font-size: 1.8rem;
+    list-style-type: none;
+    list-style-position: outside;
+    top: 25%;
+}
+
+.navbar-items ul li a {
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    text-decoration: #ffffff;
+    text-align: center;
+    word-spacing: 0;
+    padding: 22px 0 5px 0;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    outline: rgb(255, 255, 255) dashed 0;
+    box-sizing: border-box;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 45px;
+    position: absolute;
+    line-height: 18px;
+    text-align: center;
+    word-spacing: 0;
+    height: 70px;
+    width: 70px;
+    padding: 20px 28px 20px 20px;
+    z-index: 1;
+    display: flex;
+    cursor: pointer;
+}
+
+.carousel-control-prev {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    transition: color 0.5s ease-in-out;
+    color: black;
+}
+
+.carousel-control-next-icon:hover,
+.carousel-control-prev-icon:hover {
+    color: #66d0ff;
+}
+
+.carousel-items {
+    display: flex;
+    width: 100%;
+    height: 723px;
+}
+
+.carousel-item h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+.carousel-item p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    height: 104px;
+    width: 754px;
+}
+
+.talent-body {
+    display: flex;
+    color: #fff;
+    background: #00c4ff;
+    height: 275px;
+    width: 100%;
+    padding: 30px 0 60px 0;
+    text-align: left;
+    line-height: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.talent-body h1 {
+    display: block;
+    text-align: center;
+    font-size: 1.7em;
+    word-spacing: 0;
+    height: 33px;
+    width: 70%;
+    margin: 0 0 10px 0;
+    line-height: 33px;
+    transform: translateY(-150%);
+}
+
+.talent-body p {
+    display: block;
+    text-align: center;
+    font-size: 1.3em;
+    word-spacing: 0;
+    height: 27px;
+    width: 70%;
+    margin: 0 0 10px 0;
+    line-height: 33px;
+    transform: translateY(-150%);
+}
+
+footer {
+    display: flex;
+    color: #fff;
+    background: #212529;
+    height: 350px;
+    width: 100%;
+    padding: 30px 0 60px 0;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.social-media-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.social-media-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.social-media-left h3,
+.social-media-left ul,
+.social-media-left ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-media-left h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-media-left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    white-space: nowrap;
+}
+
+.social-media-left ul li {
+    margin: 0 5px;
+}
+
+.social-media-right h3,
+.social-media-right a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-media-right h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.social-media-right a {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.social-media-left a:hover,
+.social-media-right a:hover {
+    color: #00c4ff;
+}
+
+.info-body {
+    margin-top: 8em;
+    display: block;
+}
+
+.info-body h1 {
+    text-align: center;
+    position: relative;
+    color: #001d7b;
+    font-size: 45px;
+    line-height: 1.22727;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    z-index: 2;
+}
+
+.info-body h1::before {
+    content: "CONSTRUISEZ VOTRE";
+    position: absolute;
+    font-weight: 900;
+    top: -0.8em;
+    left: 0;
+    width: 100%;
+    font-size: 2.05em;
+    color: rgba(224, 224, 224, 0.3);
+    z-index: -1;
+}
+
+.info-body h1::after {
+    content: "AVENIR AVEC NOUS";
+    font-weight: 800;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 2.2em;
+    color: rgba(224, 224, 224, 0.3);
+    z-index: -1;
+}
+
+.info img,
+.info h2 {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.info h2 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info .btn-etudiant,
+.info .btn-entreprise {
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+    bottom: 25px;
+    font-size: 30px;
+    color: #fff;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info .btn-container {
+    text-align: center;
+}
+
+.btn-etudiant {
+    background-color: #00c4ff;
+    width: 150px;
+}
+
+.btn-entreprise {
+    background-color: #00c4ff;
+    width: 150px;
+}
+
+.btn-etudiant:hover,
+.btn-entreprise:hover {
+    transition: background-color 0.5s ease-in-out;
+    background-color: #66d0ff;
+}
+
+.info-etudiant,
+.info-entreprise {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-etudiant h2,
+.info-entreprise h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-etudiant p,
+.info-entreprise p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.info-body-end, .navbar-end {
+    margin-top: 8em;
+    display: block;
+}
